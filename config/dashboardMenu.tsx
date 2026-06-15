@@ -4,6 +4,7 @@ import {
     SettingOutlined,
     DashboardOutlined,
     LogoutOutlined,
+    PictureOutlined,
 } from "@ant-design/icons";
 
 import type { MenuProps } from "antd";
@@ -21,6 +22,17 @@ export const dashboardMenu: MenuItem[] = [
         key: "/dashboard/products",
         icon: <UserOutlined />,
         label: "products",
+    },
+    {
+        key: "images",
+        icon: <PictureOutlined />,
+        label: "Images",
+        children: [
+            {
+                key: "/dashboard/banners",
+                label: "Banners",
+            },
+        ],
     },
     {
         key: "/dashboard/uploads",
