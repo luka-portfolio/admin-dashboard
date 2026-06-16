@@ -13,7 +13,6 @@ import type { MenuProps } from "antd";
 type MenuItem = MenuProps["items"][number];
 
 export const dashboardMenu: MenuItem[] = [
-// export const dashboardMenu = [
     {
         key: "/dashboard",
         icon: <DashboardOutlined />,
@@ -48,7 +47,6 @@ export const dashboardMenu: MenuItem[] = [
     },
     {
     type: "divider",
-    // key: "divider-1",
     },
     {
         key: "logout",
